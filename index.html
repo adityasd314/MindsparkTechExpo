@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindspark Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <canvas id="gradient-canvas" data-js-darken-top data-transition-in></canvas>
+    <div class="Form-box">
+      <h2>TechExpo - Game of Innovations</h2>
+      <form id="form1">
+        <div class="user-box">
+          <input
+            required
+            type="text"
+            minlength="1"
+            name=""
+            id="candidate_name"
+            required=""
+          />
+          <label>Name</label>
+        </div>
+        <div class="user-box">
+          <input
+            required
+            type="text"
+            minlength="1"
+            id="college_name"
+            name=""
+            required=""
+          />
+          <label>College</label>
+        </div>
+        <div class="user-box">
+          <input
+            required
+            type="phone"
+            minlength="10"
+            name=""
+            id="phone_number"
+            required=""
+          />
+          <label>Phone Number</label>
+        </div>
+        <div class="user-box">
+          <input
+            required
+            type="text"
+            minlength="1"
+            id="product_name"
+            name=""
+            required=""
+          />
+          <label>Product Name</label>
+        </div>
+        <div class="user-box">
+          <input
+            required
+            type="textbox"
+            name=""
+            id="product_desc"
+            required=""
+          />
+          <label>Product Description</label>
+        </div>
+        <div class="file">
+          <input
+            required
+            type="file"
+            accept="application/pdf"
+            id="file_input"
+            name=""
+            required=""
+          />
+        </div>
+        <a href="#" id="submit_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+        <input type="submit" value="" style="display: none" id="hiddenSubmit" />
+      </form>
+    </div>
+    <script src="./gradient.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./validation.js"></script>
+    <script src="./submit.js"></script>
+  </body>
+</html>
